@@ -20,12 +20,12 @@ export default function Hero() {
               <span className="text-accent3">githubLink</span>{' '}
               <span className="text-text">=</span>{' '}
               <a
-                href="https://github.com/vvvvadya"
+                href="https://github.com/vlada-marchenko"
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent2 underline decoration-dotted underline-offset-4 hover:text-accent"
               >
-                "https://github.com/vvvvadya"
+                "https://github.com/vlada-marchenko"
               </a>
             </p>
           </div>

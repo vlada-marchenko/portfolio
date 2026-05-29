@@ -5,29 +5,31 @@ const projects = [
     name: 'stream-vibe',
     desc: 'Movie streaming UI with TMDB API, dynamic routing, swipeable carousel, and 30+ unit tests + 19 e2e tests. Image lazy-loading cut initial load by 40%.',
     stack: ['Next.js', 'TypeScript', 'TanStack Query', 'Playwright'],
-    live: '#',
-    code: '#',
+    live: 'https://movie-streaming-lemon.vercel.app',
+    code: 'https://github.com/vlada-marchenko/movie_streaming',
   },
   {
     name: 'e-pharmacy',
     desc: 'Full-stack pharmacy management system — JWT auth, inventory CRUD with image upload, revenue analytics, and an Express/MongoDB backend deployed on Render.',
     stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
-    live: '#',
-    code: '#',
+    live: 'https://pharmacy-ten-woad.vercel.app',
+    code: 'https://github.com/vlada-marchenko/pharmacy',
+    backend: 'https://github.com/vlada-marchenko/pharmacy_backend',
   },
   {
     name: 'read-journey',
     desc: 'Reading tracker SPA with real-time circular progress charts, session flow management, and form validation across 4 pages.',
     stack: ['React', 'TypeScript', 'CSS Modules', 'Axios'],
-    live: '#',
-    code: '#',
+    live: 'https://read-journey-pied.vercel.app',
+    code: 'https://github.com/vlada-marchenko/read_journey',
   },
   {
     name: 'leleka',
     desc: 'Pregnancy tracker built with a cross-functional team of 13. Independently restored a broken production deployment within 14 hours — CORS, cookies, and a promise rejection.',
     stack: ['Next.js', 'Zustand', 'TanStack Query', 'MongoDB'],
-    live: '#',
-    code: '#',
+    live: 'https://project-stork-front-six.vercel.app',
+    code: 'https://github.com/vlada-marchenko/project-stork-front',
+    backend: 'https://github.com/vlada-marchenko/backend-project-stork',
   },
 ]
 
@@ -71,18 +73,17 @@ export default function Projects() {
               </div>
 
               <div className="flex gap-4 text-sm">
-                <a
-                  href={p.live}
-                  className="text-accent hover:underline decoration-dotted underline-offset-4"
-                >
+                <a href={p.live} target="_blank" rel="noreferrer" className="text-accent hover:underline decoration-dotted underline-offset-4">
                   → live
                 </a>
-                <a
-                  href={p.code}
-                  className="text-muted hover:text-text"
-                >
-                  → source
+                <a href={p.code} target="_blank" rel="noreferrer" className="text-muted hover:text-text">
+                  → frontend
                 </a>
+                {p.backend && (
+                  <a href={p.backend} target="_blank" rel="noreferrer" className="text-muted hover:text-text">
+                    → backend
+                  </a>
+                )}
               </div>
             </div>
           </article>
