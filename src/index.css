@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* fonts */
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --font-sans: Inter, system-ui, sans-serif;
+
+  /* Catppuccin Mocha palette */
+  --color-bg: #11111b;
+  --color-panel: #1e1e2e;
+  --color-surface: #181825;
+  --color-border: #313244;
+  --color-muted: #6c7086;
+  --color-text: #cdd6f4;
+  --color-accent: #cba6f7;
+  --color-accent2: #89dceb;
+  --color-accent3: #fab387;
+  --color-accent4: #89b4fa;
+  --color-red: #f38ba8;
+
+  /* breakpoints (same as v3 defaults) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  .animate-blink  { animation: blink  1s steps(1) infinite; }
+  .animate-fadeUp { animation: fadeUp 0.5s ease-out both; }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  background:
+    radial-gradient(ellipse 900px 650px at 10% -10%, rgba(203,166,247,0.14), transparent 65%),
+    radial-gradient(ellipse 700px 500px at 90% 110%, rgba(137,220,235,0.10), transparent 65%),
+    radial-gradient(ellipse 500px 400px at 75% 20%, rgba(137,180,250,0.06), transparent 60%),
+    #11111b;
+  color: #cdd6f4;
+  min-height: 100vh;
+}
+
+/* subtle dot-grid overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(203,166,247,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: 0;
+}
+
+::selection { background: rgba(203,166,247,0.2); color: #cdd6f4; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #11111b; }
+::-webkit-scrollbar-thumb { background: #313244; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #45475a; }
