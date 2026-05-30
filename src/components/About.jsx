@@ -26,16 +26,20 @@ export default function About() {
           </p>
           <p className="pl-2 border-l-2 border-accent/20 ml-1">
             <span className="text-muted"> * </span>
-            Previously a Night Auditor at 25hours Hotel, where I learned to
-            diagnose and fix problems autonomously under pressure. That mindset
-            transferred directly to debugging production incidents at 2 a.m.
+            Before coding full-time I ran overnight operations at 25hours Hotel —
+            no manager on-site, full accountability for financial reporting, guest
+            operations, and incident resolution. Zero-error reports under hard
+            deadlines. When something broke at 3 a.m., I diagnosed it and fixed
+            it without escalation. That discipline carries directly into
+            production debugging.
           </p>
           <p><span className="text-muted"> */</span></p>
         </div>
 
         <aside className="rounded-md border border-border bg-panel p-5 font-mono text-sm space-y-3 h-fit">
           <div className="text-muted mb-2">// quick-info</div>
-          <Row k="status" v="open to B2B" vClass="text-accent" />
+          <Row k="status" v="open to work" vClass="text-accent" />
+          <Row k="contracts" v="B2B + employment" vClass="text-accent" />
           <Row k="based" v="'Hamburg, DE'" vClass="text-accent3" />
           <Row k="focus" v="'frontend'" vClass="text-accent3" />
           <Row k="testing" v="'Vitest, Playwright'" vClass="text-accent3" />

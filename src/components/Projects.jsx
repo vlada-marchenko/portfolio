@@ -3,14 +3,14 @@ import SectionHeader from './SectionHeader'
 const projects = [
   {
     name: 'stream-vibe',
-    desc: 'Movie streaming UI with TMDB API, dynamic routing, swipeable carousel, and 30+ unit tests + 19 e2e tests. Image lazy-loading cut initial load by 40%.',
+    desc: 'Full-featured streaming UI with TMDB API integration, dynamic routing for movies and series, swipeable hero carousel, genre toggles, and Formik/Yup form. Mobile-first across 4 breakpoints (375–1920px). Added 30+ unit tests with React Testing Library/Vitest and 19 Playwright e2e tests. Image lazy-loading cut initial load time by 40%.',
     stack: ['Next.js', 'TypeScript', 'TanStack Query', 'Playwright'],
     live: 'https://movie-streaming-lemon.vercel.app',
     code: 'https://github.com/vlada-marchenko/movie_streaming',
   },
   {
     name: 'e-pharmacy',
-    desc: 'Full-stack pharmacy management system — JWT auth, inventory CRUD with image upload, revenue analytics, and an Express/MongoDB backend deployed on Render.',
+    desc: 'Independently designed and built a full-stack pharmacy system. JWT auth with token refresh and auto-logout, inventory CRUD with image upload, revenue analytics with sales tracking and low-stock alerts. Statistics page built with Next.js intercepting route modals. Express/MongoDB backend on Render. 5 dashboard modules, responsive across mobile, tablet, and desktop.',
     stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     live: 'https://pharmacy-ten-woad.vercel.app',
     code: 'https://github.com/vlada-marchenko/pharmacy',
@@ -18,14 +18,14 @@ const projects = [
   },
   {
     name: 'read-journey',
-    desc: 'Reading tracker SPA with real-time circular progress charts, session flow management, and form validation across 4 pages.',
+    desc: 'Reading tracker SPA with 4 pages — recommended books, personal library, active reading session, and progress statistics. Real-time circular progress charts, session flow management with start/stop/finish states, and form validation across 2 auth forms with Yup.',
     stack: ['React', 'TypeScript', 'CSS Modules', 'Axios'],
     live: 'https://read-journey-pied.vercel.app',
     code: 'https://github.com/vlada-marchenko/read_journey',
   },
   {
     name: 'leleka',
-    desc: 'Pregnancy tracker built with a cross-functional team of 13. Independently restored a broken production deployment within 14 hours — CORS, cookies, and a promise rejection.',
+    desc: 'Pregnancy tracker built across a cross-functional team of 13 through agile collaboration. Implemented the journey page state cards and the private week endpoint on the Express backend. After launch, independently diagnosed and restored a broken production deployment within 14 hours: resolved cross-domain auth failures (CORS config, sameSite cookies, httpOnly token constraints) and traced an infinite loading spinner to an unhandled promise rejection. Shipped with zero data loss.',
     stack: ['Next.js', 'Zustand', 'TanStack Query', 'MongoDB'],
     live: 'https://project-stork-front-six.vercel.app',
     code: 'https://github.com/vlada-marchenko/project-stork-front',
