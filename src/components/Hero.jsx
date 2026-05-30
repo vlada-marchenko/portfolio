@@ -13,7 +13,7 @@ export default function Hero() {
           <p className="font-mono text-xl text-accent2">&gt; Frontend Developer</p>
 
           <div className="pt-6 font-mono text-sm text-muted leading-relaxed space-y-1">
-            <p><span className="text-muted">{'//'}</span> available for remote B2B contracts</p>
+            <p><span className="text-muted">{'//'}</span> available for remote B2B contracts & employment</p>
             <p><span className="text-muted">{'//'}</span> check out my work on GitHub</p>
             <p>
               <span className="text-accent4">const</span>{' '}

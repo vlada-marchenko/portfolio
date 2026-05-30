@@ -25,7 +25,7 @@ const projects = [
   },
   {
     name: 'leleka',
-    desc: 'Pregnancy tracker built across a cross-functional team of 13 through agile collaboration. Implemented the journey page state cards and the private week endpoint on the Express backend. After launch, independently diagnosed and restored a broken production deployment within 14 hours: resolved cross-domain auth failures (CORS config, sameSite cookies, httpOnly token constraints) and traced an infinite loading spinner to an unhandled promise rejection. Shipped with zero data loss.',
+    desc: 'Pregnancy tracker built across a cross-functional team of 13 through agile collaboration. Implemented the journey page state cards and the private week endpoint on the Express backend. After launch, independently diagnosed and restored a broken production deployment: resolved cross-domain auth failures (CORS config, sameSite cookies, httpOnly token constraints) and traced an infinite loading spinner to an unhandled promise rejection. Shipped with zero data loss.',
     stack: ['Next.js', 'Zustand', 'TanStack Query', 'MongoDB'],
     live: 'https://project-stork-front-six.vercel.app',
     code: 'https://github.com/vlada-marchenko/project-stork-front',
