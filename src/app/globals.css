@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* fonts */
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
-  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "Fira Code", ui-monospace, monospace;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
 
   /* Catppuccin Mocha palette */
   --color-bg: #11111b;
@@ -18,7 +17,6 @@
   --color-accent4: #89b4fa;
   --color-red: #f38ba8;
 
-  /* breakpoints (same as v3 defaults) */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -44,7 +42,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
   background:
     radial-gradient(ellipse 900px 650px at 10% -10%, rgba(203,166,247,0.14), transparent 65%),
     radial-gradient(ellipse 700px 500px at 90% 110%, rgba(137,220,235,0.10), transparent 65%),
@@ -54,7 +52,6 @@ body {
   min-height: 100vh;
 }
 
-/* subtle dot-grid overlay */
 body::before {
   content: '';
   position: fixed;
