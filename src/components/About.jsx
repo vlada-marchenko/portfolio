@@ -43,7 +43,10 @@ export default function About() {
           <Row k="based" v="'Hamburg, DE'" vClass="text-accent3" />
           <Row k="focus" v="'frontend'" vClass="text-accent3" />
           <Row k="testing" v="'Vitest, Playwright'" vClass="text-accent3" />
-          <Row k="languages" v="4 spoken" vClass="text-accent2" />
+          <Row k="EN" v="Advanced" vClass="text-accent2" />
+          <Row k="DE" v="Intermediate" vClass="text-accent2" />
+          <Row k="UK" v="Native" vClass="text-accent2" />
+          <Row k="RU" v="Fluent" vClass="text-accent2" />
         </aside>
       </div>
     </section>
