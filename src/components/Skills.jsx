@@ -17,6 +17,10 @@ const groups = [
     title: 'backend & tools',
     items: ['Node.js', 'Express', 'MongoDB', 'Git', 'Figma', 'Vercel'],
   },
+  {
+    title: 'ai tools',
+    items: ['Claude', 'Claude Code', 'GitHub Copilot', 'Gemini'],
+  },
 ]
 
 export default function Skills() {
@@ -24,7 +28,7 @@ export default function Skills() {
     <section id="skills" className="px-4 sm:px-6 lg:px-10 py-24 max-w-7xl mx-auto">
       <SectionHeader number="02" title="skills" comment="what I work with" />
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 font-mono">
         {groups.map((g) => (
           <div
             key={g.title}
