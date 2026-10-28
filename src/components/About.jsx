@@ -39,14 +39,14 @@ export default function About() {
         <aside className="rounded-md border border-border bg-panel p-5 font-mono text-sm space-y-3 h-fit">
           <div className="text-muted mb-2">// quick-info</div>
           <Row k="status" v="open to work" vClass="text-accent" />
-          <Row k="contracts" v="B2B + employment" vClass="text-accent" />
+          <Row k="contracts" v="employment, remote, B2B" vClass="text-accent" />
           <Row k="based" v="'Hamburg, DE'" vClass="text-accent3" />
           <Row k="focus" v="'frontend'" vClass="text-accent3" />
           <Row k="testing" v="'Vitest, Playwright'" vClass="text-accent3" />
-          <Row k="EN" v="Advanced" vClass="text-accent2" />
-          <Row k="DE" v="Intermediate" vClass="text-accent2" />
+          <Row k="EN" v="C1" vClass="text-accent2" />
+          <Row k="DE" v="B1" vClass="text-accent2" />
           <Row k="UK" v="Native" vClass="text-accent2" />
-          <Row k="RU" v="Fluent" vClass="text-accent2" />
+          <Row k="RU" v="Native" vClass="text-accent2" />
         </aside>
       </div>
     </section>

@@ -1,6 +1,13 @@
 import SectionHeader from './SectionHeader'
 
 const projects = [
+    {
+    name: 'blog-app',
+    desc: 'Built a blog platform in 7 days as a technical assignment. Firebase Auth handles registration and login, with posts and nested comments modeled in Firestore. Includes post CRUD, debounced search, tag filtering, and Load More pagination, with SWR for data fetching and caching.',
+    stack: ['Next.js', 'TypeScript', 'Firebase', 'SWR', 'Zustand', 'Zod', 'React Hook Form'],
+    live: 'https://blog-app-five-ebon-74.vercel.app/',
+    code: 'https://github.com/vlada-marchenko/blog_app',
+  },
   {
     name: 'stream-vibe',
     desc: 'Full-featured streaming UI with TMDB API integration, dynamic routing for movies and series, swipeable hero carousel, genre toggles, and Formik/Yup form. Mobile-first across 4 breakpoints (375–1920px). Added 30+ unit tests with React Testing Library/Vitest and 19 Playwright e2e tests. Image lazy-loading cut initial load time by 40%.',

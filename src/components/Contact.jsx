@@ -34,7 +34,7 @@ export default function Contact() {
 
       <div className="grid md:grid-cols-2 gap-8 font-mono">
         <div className="space-y-4 text-text leading-relaxed">
-          <p className="text-muted">// open to remote roles — B2B and employment</p>
+          <p className="text-muted">// open to employment, remote opportunities and B2B contracts</p>
           <p>
             Have a project that needs clean, tested React code delivered from
             Figma to production? Or looking for a frontend developer to join
